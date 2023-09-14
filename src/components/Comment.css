@@ -1,0 +1,50 @@
+/* src/components/Comment.css */
+.comment {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  background-color: #f9f9f9;
+  display: flex;
+
+  align-content: center;
+
+  width: 50%;
+  margin-left: 25%;
+}
+
+.imgDiv {
+  /* margin-top: -10%; */
+  margin-right: 20px;
+}
+
+.actions {
+  margin-top: 5px;
+}
+
+button {
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .comment {
+    width: 80%; /* Adjust the width for tablets */
+    margin-left: 10%; /* Adjust the left margin for tablets */
+  }
+
+  .imgDiv {
+    margin-top: 0; /* Remove the negative margin for tablets */
+    margin-right: 10px; /* Adjust margin-right for tablets */
+  }
+
+  /* Mobile Styles */
+  @media (max-width: 480px) {
+    .comment {
+      width: 90%; /* Adjust the width for mobile screens */
+      margin-left: 5%; /* Adjust the left margin for mobile screens */
+    }
+
+    .imgDiv {
+      margin-right: 5px; /* Adjust margin-right for mobile screens */
+    }
+  }
+}
